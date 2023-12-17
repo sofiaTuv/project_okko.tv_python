@@ -1,6 +1,4 @@
 import os
-import time
-
 import pytest
 
 from selenium import webdriver
@@ -60,5 +58,5 @@ def setup_browser(request):
 
 
 @pytest.fixture(scope='function', autouse=True)
-def open_browser():
-    browser.open('https://okko.tv')
+def open_browser(setup_browser):
+    browser.open('https://okko.tv/')
