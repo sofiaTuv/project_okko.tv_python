@@ -1,4 +1,6 @@
 import os
+import socket
+
 import pytest
 
 from selenium import webdriver
@@ -8,14 +10,13 @@ from dotenv import load_dotenv
 
 from utils import attach
 
-
-DEFAULT_BROWSER_VERSION = "100.0"
+DEFAULT_BROWSER_VERSION = "108.0"
 
 
 def pytest_addoption(parser):
     parser.addoption(
         '--browser_version',
-        default='100.0'
+        default='108.0'
     )
 
 
@@ -43,7 +44,7 @@ def setup_browser(request):
     password = os.getenv('PASSWORD')
 
     driver = webdriver.Remote(
-        command_executor=f"https://{login}:{password}@selenoid.autotests.cloud/wd/hub",
+        command_executor=f"http://{login}:{password}@95.216.214.178:8080//wd/hub",
         options=options
     )
     browser.config.driver = driver
