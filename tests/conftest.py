@@ -1,6 +1,3 @@
-import os
-import socket
-
 import pytest
 
 from selenium import webdriver
@@ -8,15 +5,16 @@ from selenium.webdriver.chrome.options import Options
 from selene import browser
 from dotenv import load_dotenv
 
+from config import url
 from utils import attach
 
-DEFAULT_BROWSER_VERSION = "118.0"
+DEFAULT_BROWSER_VERSION = "119.0"
 
 
 def pytest_addoption(parser):
     parser.addoption(
         '--browser_version',
-        default='118.0'
+        default='119.0'
     )
 
 
@@ -42,10 +40,9 @@ def setup_browser(request):
 
    # login = os.getenv('LOGIN')
    # password = os.getenv('PASSWORD')
-    url = os.getenv('URL')
 
     driver = webdriver.Remote(
-        command_executor=f'http://{url}//wd/hub',
+        command_executor=f'http://{url}/wd/hub',
         options=options
     )
     browser.config.driver = driver
