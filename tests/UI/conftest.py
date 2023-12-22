@@ -38,14 +38,15 @@ def setup_browser(request):
     }
     options.capabilities.update(selenoid_capabilities)
 
-   # login = os.getenv('LOGIN')
-   # password = os.getenv('PASSWORD')
-
     driver = webdriver.Remote(
         command_executor=f'http://{url}/wd/hub',
         options=options
     )
     browser.config.driver = driver
+    browser.config.timeout = 15
+    browser.config.window_width = 1920
+    browser.config.window_height = 1080
+
     yield browser
 
     attach.add_screenshot(browser)
