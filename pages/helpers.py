@@ -1,6 +1,4 @@
-from typing import List
 from selene import browser, Element
-from selene.core.condition import Condition
 
 
 class Helpers:
@@ -15,16 +13,3 @@ class Helpers:
     @staticmethod
     def element(path) -> Element:
         return browser.element(path)
-
-    @staticmethod
-    def element_assert(path: str, conditions: list[Condition[Element]]) -> None:
-        element = browser.element(path)
-        errors: List[Exception] = []
-        for condition in conditions:
-            try:
-                element.should(condition)
-                return
-            except Exception as e:
-                errors.append(e)
-        raise AssertionError('; '.join(map(str, errors)))
-
