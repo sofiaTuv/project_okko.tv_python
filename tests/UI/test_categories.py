@@ -17,13 +17,17 @@ class TestCategory:
 
     @allure.title('Выбор категории "Природа"')
     def test_nature_category(self):
+        # ACT
         self.main_p.select_category('Природа')
         self.nature_p.is_visible()
         self.nature_p.select_first_movie()
+        # ASSERT
         self.movie_p.is_genre(['Природа', 'Документальное'])
 
     @allure.title('Выбор категории "Спорт"')
     def test_sport_category(self):
+        # ACT
         self.main_p.select_category('Спорт')
         self.sport_p.select_subcategory('Фигурное катание')
+        # ASSERT
         self.sport_p.is_visible('Фигурное катание')
