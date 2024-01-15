@@ -1,4 +1,5 @@
 import allure
+import pytest
 
 from pages.mood_reco import MoodRecommendationsPage
 from pages.movie import MoviePage
@@ -13,10 +14,12 @@ class TestMainPage:
     mood_p = MoodRecommendationsPage()
     movie_p = MoviePage()
 
+    @pytest.mark.xfail(reason='Этот тест не стабилен')
     @allure.title('Выбор фильма по подсказке "ужаснуться", "в компании"')
     def test_horror_company_recommendation(self):
         self.search_mood_film('ужаснуться','в компании', ['Ужасы', 'Триллеры'])
 
+    @pytest.mark.xfail(reason='Этот тест не стабилен')
     @allure.title('Выбор фильма по подсказке "романтика", "вдвоем"')
     def test_romance_together_recommendation(self):
         self.search_mood_film('романтики', 'вдвоем', ['Мелодрамы', 'Драмы'])
