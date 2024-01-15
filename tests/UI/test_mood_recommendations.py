@@ -5,6 +5,7 @@ from pages.movie import MoviePage
 
 
 @allure.tag('web')
+@allure.label('layer', 'API')
 @allure.label('owner', 's.tuvykina')
 @allure.story('Выбор фильма с помощью рекомендаций')
 @allure.link('https://okko.tv/', name='Testing')

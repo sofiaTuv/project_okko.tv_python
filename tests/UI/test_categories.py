@@ -6,6 +6,7 @@ from pages.main import MainPage
 
 
 @allure.tag('web')
+@allure.label('layer', 'API')
 @allure.label('owner', 's.tuvykina')
 @allure.story('Выбор фильма по категориям')
 @allure.link('https://okko.tv/', name='Testing')

@@ -5,6 +5,7 @@ from pages.search_result import SearchResultPage
 
 
 @allure.tag('web')
+@allure.label('layer', 'API')
 @allure.label('owner', 's.tuvykina')
 @allure.story('Поиск фильма')
 @allure.link('https://okko.tv/', name='Testing')
