@@ -20,14 +20,19 @@
 </p>
 
 ##### Локальный запуск
+
 ##### Для локального запуска необходимо выполнить команду в СLI:
+```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 pytest tests/
+```
 
 ##### Получение Allure отчета
+```bash
 allure serve allure-results/
+```
 
 
 ### <img width="5%" title="Jenkins" src="resources/logo/jenkins.png"> Запуск проекта в Jenkins
