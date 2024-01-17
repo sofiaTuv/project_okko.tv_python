@@ -39,9 +39,9 @@
 ![This is an image](resources/images/test_example.png)
 
 ##### Видео прохождение теста
-![This is an image](images/screenshot/successfull_test.gif)
+![This is an image](resources/images/successfull_test.gif)
 
 ##### Видео и отчет о прохождении теcта с багом на сайта
 ![This is an image](resources/images/mood_tests.png)
-![This is an image](images/screenshot/failed_test.gif)
+![This is an image](resources/images/failed_test.gif)
 
