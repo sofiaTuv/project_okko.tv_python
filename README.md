@@ -46,7 +46,7 @@ allure serve allure-results/
 ![This is an image](resources/images/jenkins.png)
 
 <!-- Allure report -->
-
+----
 ### <img width="5%" title="Allure Report" src="resources/logo/allure_report.png"> Allure report
 ### [Report](https://jenkins.autotests.cloud/job/python_project_okko.tv/18/allure/)
 #### Результаты тестов в Allure отчете
@@ -66,7 +66,7 @@ allure serve allure-results/
 ![This is an image](resources/images/failed_test.gif)
 
 <!-- Allure TestOps -->
-
+----
 ### <img width="5%" title="Allure TestOps" src="resources/logo/allure_testops.png"> Allure TestOps
 
 ### [Dashboard](https://allure.autotests.cloud/project/3977/dashboards)
@@ -84,21 +84,21 @@ allure serve allure-results/
 ![This is an image](resources/images/launches.png)
 
 <!-- Jira -->
-
+----
 ### <img width="5%" title="Jira" src="resources/logo/jira.png"> Jira
 
 ### [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1061)
 
-##### Настроенная через Allure TestOps интеграция с Jira
+#### Настроенная через Allure TestOps интеграция с Jira
 
 ![This is an image](resources/images/jira_okko.png)
 
 
 <!-- Telegram -->
-
+----
 ### <img width="5%" title="Telegram" src="resources/logo/tg.png"> Telegram
 
-##### Уведовление в Telegram bot после прохождения тестов
+#### Уведовление в Telegram bot после прохождения тестов
 
 ![This is an image](resources/images/tg_okkotv.png)
 
