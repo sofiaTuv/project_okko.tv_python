@@ -1,11 +1,12 @@
 ## Проект UI автотестов на онлайн-кинотеатр okko.tv
 ![This is an image](resources/images/okkotv.png)
 
-### Список реализованных проверок:
+<h3> Список реализованных проверок:</h3>
 * Поиск фильма по поисковой строке 
 * Выбор фильма по подсказке и проверка на соответствующий жанр 
 * Выбор фильма по категории и проверка на соответствующий жанр
-
+  
+----
 ### Используется:
 <p  align="center">
   <code><img width="5%" title="Python" src="resources/logo/python.png"></code>
@@ -19,9 +20,10 @@
   <code><img width="5%" title="Telegram" src="resources/logo/tg.png"></code>
 </p>
 
+----
 ### Локальный запуск
 
-##### Для локального запуска необходимо выполнить команду в СLI:
+> Для локального запуска необходимо выполнить команду в СLI:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
@@ -29,17 +31,17 @@ pip install -r requirements.txt
 pytest tests/
 ```
 
-### Получение Allure отчета
+> Получение Allure отчета
 ```bash
 allure serve allure-results/
 ```
 
-
+----
 ### <img width="5%" title="Jenkins" src="resources/logo/jenkins.png"> Запуск проекта в Jenkins
 
 ### [Jenkins](https://jenkins.autotests.cloud/job/python_project_okko.tv/)
 
-##### При нажатии на "Build with Parameters" начнется сборка тестов и их прохождение, через виртуальную машину в Selenide.
+##### При нажатии на "Build with Parameters" начнется сборка тестов и их прохождение, через виртуальную машину в Selenide
 ![This is an image](resources/images/jenkins.png)
 
 <!-- Allure report -->
