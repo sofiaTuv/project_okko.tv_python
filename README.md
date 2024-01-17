@@ -19,7 +19,7 @@
   <code><img width="5%" title="Telegram" src="resources/logo/tg.png"></code>
 </p>
 
-#### Локальный запуск
+### Локальный запуск
 
 ##### Для локального запуска необходимо выполнить команду в СLI:
 ```bash
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 pytest tests/
 ```
 
-#### Получение Allure отчета
+### Получение Allure отчета
 ```bash
 allure serve allure-results/
 ```
