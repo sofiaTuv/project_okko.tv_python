@@ -1,4 +1,5 @@
 ## Проект UI автотестов на онлайн-кинотеатр okko.tv
+![This is an image](resources/images/okkotv.png)
 
 ### Список реализованных проверок:
 * Поиск фильма по поисковой строке 
@@ -18,11 +19,22 @@
   <code><img width="5%" title="Telegram" src="resources/logo/tg.png"></code>
 </p>
 
+##### Локальный запуск
+##### Для локального запуска необходимо выполнить команду в СLI:
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+pytest tests/
+
+##### Получение Allure отчета
+allure serve allure-results/
+
+
 ### <img width="5%" title="Jenkins" src="resources/logo/jenkins.png"> Запуск проекта в Jenkins
 
 ### [Jenkins](https://jenkins.autotests.cloud/job/python_project_okko.tv/)
 
-##### При нажатии на "Собрать сейчас" начнется сборка тестов и их прохождение, через виртуальную машину в Selenide.
+##### При нажатии на "Build with Parameters" начнется сборка тестов и их прохождение, через виртуальную машину в Selenide.
 ![This is an image](resources/images/jenkins.png)
 
 <!-- Allure report -->
