@@ -85,21 +85,21 @@ allure serve allure-results/
 
 <!-- Jira -->
 
-### <img width="5%" title="Jira" src="images/logo/jira.png"> Интеграция с Jira
+### <img width="5%" title="Jira" src="resources/logo/jira.png"> Jira
 
 ### [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1061)
 
 ##### Настроенная через Allure TestOps интеграция с Jira
 
-![This is an image](images/screenshot/jira_okko.png)
+![This is an image](resources/images/jira_okko.png)
 
 
 <!-- Telegram -->
 
-### <img width="5%" title="Telegram" src="images/logo/tg.png"> Интеграция с Telegram
+### <img width="5%" title="Telegram" src="resources/logo/tg.png"> Telegram
 
 ##### Уведовление в Telegram bot после прохождения тестов
 
-![This is an image](images/screenshot/tg_okkotv.png)
+![This is an image](resources/images/tg_okkotv.png)
 
 
